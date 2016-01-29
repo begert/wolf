@@ -10,13 +10,6 @@
 	</xsl:template>
 
 	<xsl:template match="queryresult[@success='true']">
-		<xsl:text>&#xA;</xsl:text>
-		<xsl:text>RESULT (Success: </xsl:text>
-		<xsl:value-of select="@success"/>
-		<xsl:text>)</xsl:text>
-		<xsl:text>&#xA;</xsl:text>
-		<xsl:text>==========================================</xsl:text>
-		<xsl:text>&#xA;</xsl:text>
 
 		<xsl:for-each select="pod">
 			<xsl:text>&#xA;</xsl:text>
